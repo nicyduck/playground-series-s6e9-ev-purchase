@@ -1,0 +1,23 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+.matplotlib/
+.jupyter/
+.virtual_documents/
+
+# Kaggle data and generated predictions/models are not source artifacts.
+data/
+models/
+oof/
+submissions/*.csv
+experiments/*/
+
+# Keep the compact experiment and submission registries.
+!experiments/experiments.csv
+!submissions/submissions.csv
+
+# Large generated report tables are reproducible from the scripts.
+reports/*.csv
+reports/*.png
+
